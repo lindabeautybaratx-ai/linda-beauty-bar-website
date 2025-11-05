@@ -1,29 +1,43 @@
-import { useState } from 'react';
-import { servicesData, serviceCategories } from '../data/services';
+import { useState, useEffect } from 'react';
+import { servicesData } from '../data/services';
+import { categories, allCategories, getCategoryById, getCategoryIcon } from '../data/categories';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
-import { navigate } from '../components/Router';
-import { Sparkles, Eye, Smile, Brush, Heart, Dumbbell, Droplet } from 'lucide-react';
-
-const categoryIcons: Record<string, any> = {
-  'Eyebrow Services': Brush,
-  'Lip Services': Smile,
-  'Paramedical Tattoo': Heart,
-  'Lash Extensions': Eye,
-  'Body Sculpting': Dumbbell,
-  'Teeth Whitening': Sparkles,
-};
+import { navigate, useSearchParams } from '../components/Router';
 
 export function ServicesPage() {
-  const [selectedCategory, setSelectedCategory] = useState('All Services');
+  const searchParams = useSearchParams();
+  const categoryIdFromUrl = searchParams.get('category');
+  const [selectedCategoryName, setSelectedCategoryName] = useState('All Services');
 
-  const filteredServices = selectedCategory === 'All Services'
-    ? servicesData
-    : servicesData.filter(service => service.category === selectedCategory);
+  useEffect(() => {
+    if (categoryIdFromUrl) {
+      const category = getCategoryById(categoryIdFromUrl);
+      if (category) {
+        setSelectedCategoryName(category.name);
+      } else {
+        setSelectedCategoryName('All Services');
+      }
+    } else {
+      setSelectedCategoryName('All Services');
+    }
+  }, [categoryIdFromUrl]);
 
-  const getCategoryIcon = (category: string) => {
-    return categoryIcons[category] || Droplet;
+  const handleCategoryChange = (categoryName: string) => {
+    setSelectedCategoryName(categoryName);
+    if (categoryName === 'All Services') {
+      navigate('/services');
+    } else {
+      const category = categories.find(cat => cat.name === categoryName);
+      if (category) {
+        navigate(`/services?category=${category.id}`);
+      }
+    }
   };
+
+  const filteredServices = selectedCategoryName === 'All Services'
+    ? servicesData
+    : servicesData.filter(service => service.category === selectedCategoryName);
 
   return (
     <section className="py-20 bg-cream min-h-screen">
@@ -38,17 +52,17 @@ export function ServicesPage() {
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {serviceCategories.map((category) => (
+          {allCategories.map((categoryName) => (
             <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-full transition-all ${
-                selectedCategory === category
+              key={categoryName}
+              onClick={() => handleCategoryChange(categoryName)}
+              className={`px-6 py-2 rounded-full transition-all cursor-pointer ${
+                selectedCategoryName === categoryName
                   ? 'bg-blush-pink text-charcoal'
                   : 'bg-white text-charcoal hover:bg-blush-pink-light border border-blush-pink-light'
               }`}
             >
-              {category}
+              {categoryName}
             </button>
           ))}
         </div>

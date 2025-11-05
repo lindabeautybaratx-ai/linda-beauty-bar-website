@@ -14,11 +14,11 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-2 text-sm">
             <div className="flex items-center gap-4">
-              <a href="tel:+1234567890" className="flex items-center gap-2 text-charcoal hover:text-blush-pink transition-colors">
+              <a href="tel:+1234567890" className="flex items-center gap-2 text-charcoal hover:text-blush-pink transition-colors cursor-pointer">
                 <Phone className="w-4 h-4" />
                 <span className="hidden sm:inline">(123) 456-7890</span>
               </a>
-              <a href="mailto:info@lindasbeautybar.com" className="flex items-center gap-2 text-charcoal hover:text-blush-pink transition-colors">
+              <a href="mailto:info@lindasbeautybar.com" className="flex items-center gap-2 text-charcoal hover:text-blush-pink transition-colors cursor-pointer">
                 <Mail className="w-4 h-4" />
                 <span className="hidden sm:inline">info@lindasbeautybar.com</span>
               </a>
@@ -36,7 +36,7 @@ export function Header() {
           <div className="flex items-center">
             <button 
               onClick={() => navigate('/')} 
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity cursor-pointer"
             >
               <img 
                 src={logo} 
@@ -49,26 +49,26 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <button onClick={() => navigate('/')} className="text-charcoal hover:text-blush-pink transition-colors">
+            <button onClick={() => navigate('/')} className="text-charcoal hover:text-blush-pink transition-colors cursor-pointer">
               Home
             </button>
-            <button onClick={() => navigate('/services')} className="text-charcoal hover:text-blush-pink transition-colors">
+            <button onClick={() => navigate('/services')} className="text-charcoal hover:text-blush-pink transition-colors cursor-pointer">
               Services
             </button>
-            <button onClick={() => { navigate('/'); setTimeout(() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors">
+            <button onClick={() => { navigate('/'); setTimeout(() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors cursor-pointer">
               Portfolio
             </button>
-            <button onClick={() => { navigate('/'); setTimeout(() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors">
+            <button onClick={() => { navigate('/'); setTimeout(() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors cursor-pointer">
               About
             </button>
-            <button onClick={() => { navigate('/'); setTimeout(() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors">
+            <button onClick={() => { navigate('/'); setTimeout(() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors cursor-pointer">
               FAQ
             </button>
             <a 
               href="https://lindasbeautyacademy.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-charcoal hover:text-blush-pink transition-colors"
+              className="text-charcoal hover:text-blush-pink transition-colors cursor-pointer"
             >
               Academy
             </a>
@@ -81,7 +81,7 @@ export function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden p-2"
+            className="lg:hidden p-2 cursor-pointer"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X /> : <Menu />}
@@ -92,26 +92,26 @@ export function Header() {
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col gap-4">
-              <button onClick={() => { navigate('/'); setMobileMenuOpen(false); }} className="text-charcoal hover:text-blush-pink transition-colors text-left">
+              <button onClick={() => { navigate('/'); setMobileMenuOpen(false); }} className="text-charcoal hover:text-blush-pink transition-colors text-left cursor-pointer">
                 Home
               </button>
-              <button onClick={() => { navigate('/services'); setMobileMenuOpen(false); }} className="text-charcoal hover:text-blush-pink transition-colors text-left">
+              <button onClick={() => { navigate('/services'); setMobileMenuOpen(false); }} className="text-charcoal hover:text-blush-pink transition-colors text-left cursor-pointer">
                 Services
               </button>
-              <button onClick={() => { navigate('/'); setMobileMenuOpen(false); setTimeout(() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors text-left">
+              <button onClick={() => { navigate('/'); setMobileMenuOpen(false); setTimeout(() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors text-left cursor-pointer">
                 Portfolio
               </button>
-              <button onClick={() => { navigate('/'); setMobileMenuOpen(false); setTimeout(() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors text-left">
+              <button onClick={() => { navigate('/'); setMobileMenuOpen(false); setTimeout(() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors text-left cursor-pointer">
                 About
               </button>
-              <button onClick={() => { navigate('/'); setMobileMenuOpen(false); setTimeout(() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors text-left">
+              <button onClick={() => { navigate('/'); setMobileMenuOpen(false); setTimeout(() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="text-charcoal hover:text-blush-pink transition-colors text-left cursor-pointer">
                 FAQ
               </button>
               <a 
                 href="https://lindasbeautyacademy.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-charcoal hover:text-blush-pink transition-colors"
+                className="text-charcoal hover:text-blush-pink transition-colors cursor-pointer"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Academy

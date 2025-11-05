@@ -1235,6 +1235,8 @@ export const servicesData: Service[] = [
   },
 ];
 
+// Service categories are now defined in ../data/categories.ts
+// This export is kept for backward compatibility but will be removed
 export const serviceCategories = [
   'All Services',
   'Eyebrow Services',

@@ -2,6 +2,8 @@ import { Award, Users, Heart, GraduationCap } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Button } from './ui/button';
+import hello from '../assets/hello.png';
+import linda1 from '../assets/linda-1.png';
 
 const achievements = [
   {
@@ -34,7 +36,7 @@ export function About() {
           <div className="relative">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1600637070413-0798fafbb6c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWtldXAlMjBhcnRpc3QlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzYxNTk3NjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={linda1}
                 alt="Linda, professional permanent makeup artist"
                 className="w-full h-full object-cover"
               />
@@ -104,7 +106,7 @@ export function About() {
               </div>
               <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1717500252010-d708ec89a0a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjB0cmFpbmluZyUyMGNsYXNzcm9vbXxlbnwxfHx8fDE3NjE3MDUwNDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={hello}
                   alt="Linda's Beauty Academy training"
                   className="w-full h-full object-cover"
                 />
