@@ -42,7 +42,7 @@ export function ServicesOverview() {
                 </CardHeader>
                 <CardContent>
                   <Button 
-                    onClick={(e) => {
+                    onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
                       e.stopPropagation();
                       const categoryId = getCategoryIdByName(service.category);
                       if (categoryId) {

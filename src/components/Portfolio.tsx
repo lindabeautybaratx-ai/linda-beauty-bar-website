@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { portfolioImages } from '../data/portfolio';
+import { portfolioImages, type PortfolioImage } from '../data/portfolio';
 
 export function Portfolio() {
   const [activeTab, setActiveTab] = useState('all');
@@ -28,7 +28,7 @@ export function Portfolio() {
           {Object.entries(portfolioImages).map(([category, images]) => (
             <TabsContent key={category} value={category} className="mt-0">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {images.map((image) => (
+                {images.map((image: PortfolioImage) => (
                   <div
                     key={image.id}
                     className="aspect-square rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group cursor-pointer"
