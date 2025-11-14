@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { getServiceBookingLink } from '../utils/bookingLinks';
 import type { Portfolio, PortfolioCategory } from '../data/types';
 
 export function Portfolio() {
@@ -107,7 +108,7 @@ export function Portfolio() {
             Ready to transform your look?
           </p>
           <a
-            href="https://booking.lindasbeautybar.com"
+            href={getServiceBookingLink('default')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-blush-pink text-charcoal rounded-lg hover:bg-blush-pink-dark transition-colors cursor-pointer"

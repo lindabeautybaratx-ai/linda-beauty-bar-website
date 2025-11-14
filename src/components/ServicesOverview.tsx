@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Button } from './ui/button';
 import { navigate } from './Router';
 import { getServiceHighlights, getCategories } from '../utils/adminStorage';
+import { getServiceBookingLink } from '../utils/bookingLinks';
 import type { ServiceHighlight, Category } from '../data/types';
 
 export function ServicesOverview() {
@@ -121,7 +122,7 @@ export function ServicesOverview() {
             View All Services
           </Button>
           <Button asChild size="lg" className="bg-blush-pink hover:bg-blush-pink-dark text-charcoal">
-            <a href="https://booking.lindasbeautybar.com" target="_blank" rel="noopener noreferrer">
+            <a href={getServiceBookingLink('default')} target="_blank" rel="noopener noreferrer">
               Book Your Consultation
             </a>
           </Button>

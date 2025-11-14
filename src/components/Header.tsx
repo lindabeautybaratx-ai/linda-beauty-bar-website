@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from './ui/button';
 import { navigate } from './Router';
+import { getServiceBookingLink } from '../utils/bookingLinks';
 import logo from '../assets/logo-1.png';
 
 export function Header() {
@@ -69,7 +70,7 @@ export function Header() {
               Academy
             </a>
             <Button asChild className="bg-blush-pink hover:bg-blush-pink-dark text-charcoal">
-              <a href="https://booking.lindasbeautybar.com" target="_blank" rel="noopener noreferrer">
+              <a href={getServiceBookingLink('default')} target="_blank" rel="noopener noreferrer">
                 Book Now
               </a>
             </Button>
@@ -113,7 +114,7 @@ export function Header() {
                 Academy
               </a>
               <Button asChild className="bg-blush-pink hover:bg-blush-pink-dark text-charcoal w-full">
-                <a href="https://booking.lindasbeautybar.com" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                <a href={getServiceBookingLink('default')} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                   Book Now
                 </a>
               </Button>

@@ -28,6 +28,7 @@ function dbRowToService(row: any): Service {
     deposit: row.deposit || '',
     categoryId: row.category_id || row.category, // Support both old and new column names for migration
     imageUrl: row.image_url || '',
+    bookingLink: row.booking_link || undefined,
     benefits: row.benefits || [],
     process: row.process || [],
     aftercare: row.aftercare || [],
@@ -54,6 +55,7 @@ function serviceToDbRow(service: Service): any {
     deposit: service.deposit || null,
     category_id: service.categoryId,
     image_url: service.imageUrl || null,
+    booking_link: service.bookingLink || null,
     benefits: service.benefits || [],
     process: service.process || [],
     aftercare: service.aftercare || [],

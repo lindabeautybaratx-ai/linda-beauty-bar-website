@@ -2,6 +2,7 @@ import { CheckCircle, Clock, DollarSign, AlertCircle } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { getBookingLink } from '../utils/bookingLinks';
 
 interface ServiceDetailProps {
   id: string;
@@ -15,6 +16,7 @@ interface ServiceDetailProps {
   process: string[];
   aftercare: string[];
   faqs: { question: string; answer: string }[];
+  bookingLink?: string;
 }
 
 export function ServiceDetail({
@@ -29,7 +31,9 @@ export function ServiceDetail({
   process,
   aftercare,
   faqs,
+  bookingLink,
 }: ServiceDetailProps) {
+  const bookingUrl = getBookingLink({ id, bookingLink });
   return (
     <section id={`service-${id}`} className="py-20 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,7 +62,7 @@ export function ServiceDetail({
             </div>
 
             <Button asChild size="lg" className="bg-blush-pink hover:bg-blush-pink-dark text-charcoal">
-              <a href="https://booking.lindasbeautybar.com" target="_blank" rel="noopener noreferrer">
+              <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
                 Book This Service
               </a>
             </Button>

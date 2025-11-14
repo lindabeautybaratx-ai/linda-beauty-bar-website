@@ -26,6 +26,7 @@ export interface Service extends SEOData {
   process: string[];
   aftercare: string[];
   faqs: { question: string; answer: string }[];
+  bookingLink?: string; // Optional service-specific booking link
 }
 
 // Category Interfaces

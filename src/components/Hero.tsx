@@ -1,6 +1,7 @@
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { navigate } from './Router';
+import { getServiceBookingLink } from '../utils/bookingLinks';
 import linda from '../assets/linda.png';
 
 export function Hero() {
@@ -21,7 +22,7 @@ export function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-blush-pink hover:bg-blush-pink-dark text-charcoal">
-                <a href="https://booking.lindasbeautybar.com" target="_blank" rel="noopener noreferrer">
+                <a href={getServiceBookingLink('default')} target="_blank" rel="noopener noreferrer">
                   Book Your Consultation
                 </a>
               </Button>

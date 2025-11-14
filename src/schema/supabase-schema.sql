@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS services (
   deposit TEXT,
   category_id TEXT NOT NULL REFERENCES service_categories(id) ON DELETE RESTRICT,
   image_url TEXT,
+  booking_link TEXT,
   benefits JSONB DEFAULT '[]'::jsonb,
   process JSONB DEFAULT '[]'::jsonb,
   aftercare JSONB DEFAULT '[]'::jsonb,

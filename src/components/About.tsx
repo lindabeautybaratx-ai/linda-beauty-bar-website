@@ -2,6 +2,7 @@ import { Award, Users, Heart, GraduationCap } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Button } from './ui/button';
+import { getServiceBookingLink } from '../utils/bookingLinks';
 import hello from '../assets/hello.png';
 import linda1 from '../assets/linda-1.png';
 
@@ -63,7 +64,7 @@ export function About() {
 
             <div className="mt-8">
               <Button asChild size="lg" className="bg-blush-pink hover:bg-blush-pink-dark text-charcoal">
-                <a href="https://booking.lindasbeautybar.com" target="_blank" rel="noopener noreferrer">
+                <a href={getServiceBookingLink('default')} target="_blank" rel="noopener noreferrer">
                   Book Your Consultation
                 </a>
               </Button>

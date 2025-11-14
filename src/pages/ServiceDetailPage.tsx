@@ -108,6 +108,7 @@ export function ServiceDetailPage() {
         process={service.process}
         aftercare={service.aftercare}
         faqs={service.faqs}
+        bookingLink={service.bookingLink}
       />
 
       {/* Related Services */}

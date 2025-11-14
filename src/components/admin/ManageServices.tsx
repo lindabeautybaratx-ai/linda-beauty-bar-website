@@ -567,6 +567,20 @@ function ServiceForm({ service, categories, onSave, onCancel }: ServiceFormProps
           folder="services"
         />
 
+        <div className="space-y-2">
+          <Label htmlFor="bookingLink">Booking Link (Optional)</Label>
+          <Input
+            id="bookingLink"
+            type="url"
+            value={formData.bookingLink || ''}
+            onChange={(e) => setFormData(prev => ({ ...prev, bookingLink: e.target.value || undefined }))}
+            placeholder="https://booking.example.com/service-name"
+          />
+          <p className="text-sm text-gray-500">
+            Service-specific booking URL. If not set, the system will use environment variables or default booking link.
+          </p>
+        </div>
+
         <ArrayField
           label="Benefits"
           items={formData.benefits}

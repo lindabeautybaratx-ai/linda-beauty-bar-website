@@ -25,6 +25,7 @@ export const servicesData: Service[] = [
     duration: '120 min',
     deposit: '$50',
     imageUrl: 'https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Soft, powdered makeup look that lasts',
       'Perfect for all skin types, especially oily skin',
@@ -78,6 +79,7 @@ export const servicesData: Service[] = [
     duration: '90 min',
     deposit: '$40',
     imageUrl: 'https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Refresh faded color',
       'Maintain crisp definition',
@@ -113,6 +115,7 @@ export const servicesData: Service[] = [
     duration: '65 min',
     deposit: '$25',
     imageUrl: 'https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Perfect any areas that need additional pigment',
       'Ensure even color saturation',
@@ -147,6 +150,7 @@ export const servicesData: Service[] = [
     duration: '60 min',
     deposit: '$50',
     imageUrl: 'https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Wake up with perfect brows every day',
       'Save time on your daily makeup routine',
@@ -194,6 +198,7 @@ export const servicesData: Service[] = [
     duration: '90 min',
     deposit: '$40',
     imageUrl: 'https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Refresh faded strokes',
       'Maintain crisp hair-like definition',
@@ -229,6 +234,7 @@ export const servicesData: Service[] = [
     duration: '60 min',
     deposit: '$25',
     imageUrl: 'https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Perfect stroke retention',
       'Add strokes where needed',
@@ -263,6 +269,7 @@ export const servicesData: Service[] = [
     duration: '45 min',
     deposit: '$20',
     imageUrl: 'https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Natural plant-based tint',
       'Perfect brow mapping and shaping',
@@ -306,6 +313,7 @@ export const servicesData: Service[] = [
     duration: '10 min',
     deposit: '$50',
     imageUrl: 'https://images.unsplash.com/photo-1552256029-4e3aa83bbe2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Natural-looking color enhancement',
       'Correct lip asymmetry and improve shape',
@@ -358,6 +366,7 @@ export const servicesData: Service[] = [
     duration: '80 min',
     deposit: '$50',
     imageUrl: 'https://images.unsplash.com/photo-1552256029-4e3aa83bbe2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Refresh faded lip color',
       'Maintain definition and shape',
@@ -393,6 +402,7 @@ export const servicesData: Service[] = [
     duration: '65 min',
     deposit: '$25',
     imageUrl: 'https://images.unsplash.com/photo-1552256029-4e3aa83bbe2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Perfect color saturation',
       'Ensure even pigment retention',
@@ -429,6 +439,7 @@ export const servicesData: Service[] = [
     duration: '90 min',
     deposit: '$50',
     imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Realistic 3D nipple appearance',
       'Custom color matching',
@@ -478,6 +489,7 @@ export const servicesData: Service[] = [
     duration: '45 min',
     deposit: '$50',
     imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Reduce scar visibility',
       'Blend scars with surrounding skin',
@@ -528,6 +540,7 @@ export const servicesData: Service[] = [
     duration: '40 min',
     deposit: 'None',
     imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Complimentary follow-up',
       'Perfect initial results',
@@ -564,6 +577,7 @@ export const servicesData: Service[] = [
     duration: '150 min',
     deposit: '$20',
     imageUrl: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Natural, elegant enhancement',
       'Customizable length and curl',
@@ -609,6 +623,7 @@ export const servicesData: Service[] = [
     duration: '150 min',
     deposit: '$25',
     imageUrl: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Glossy, wet-look finish',
       'Fully customized design',
@@ -649,6 +664,7 @@ export const servicesData: Service[] = [
     duration: '10 min',
     deposit: '$30',
     imageUrl: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'More fullness than classic',
       'Still soft and natural looking',
@@ -688,6 +704,7 @@ export const servicesData: Service[] = [
     duration: '150 min',
     deposit: '$45',
     imageUrl: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Maximum fullness and drama',
       'Fluffy, dimensional look',
@@ -734,6 +751,7 @@ export const servicesData: Service[] = [
     duration: '110 min',
     deposit: 'None',
     imageUrl: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Maintain full lash look',
       'Fill in naturally shed lashes',
@@ -775,6 +793,7 @@ export const servicesData: Service[] = [
     duration: '55 min',
     deposit: 'None',
     imageUrl: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Safe, gentle removal',
       'No damage to natural lashes',
@@ -818,6 +837,7 @@ export const servicesData: Service[] = [
     duration: '120 min',
     deposit: 'None',
     imageUrl: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Transition to our salon seamlessly',
       'Assessment of existing work',
@@ -857,6 +877,7 @@ export const servicesData: Service[] = [
     duration: '60 min',
     deposit: '$25',
     imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Non-invasive fat reduction',
       'Skin tightening',
@@ -902,6 +923,7 @@ export const servicesData: Service[] = [
     duration: '75 min',
     deposit: 'None',
     imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Treat two areas in one session',
       'Comprehensive contouring',
@@ -941,6 +963,7 @@ export const servicesData: Service[] = [
     duration: '35 min',
     deposit: '$25',
     imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Non-surgical butt enhancement',
       'Lift and firm appearance',
@@ -985,6 +1008,7 @@ export const servicesData: Service[] = [
     duration: '20 min',
     deposit: '$20',
     imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Quick fat reduction treatment',
       'Target stubborn areas',
@@ -1021,6 +1045,7 @@ export const servicesData: Service[] = [
     duration: '20 min',
     deposit: '$20',
     imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Tighten and firm skin',
       'Stimulate collagen production',
@@ -1059,6 +1084,7 @@ export const servicesData: Service[] = [
     duration: '30 min',
     deposit: '$20',
     imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Reduce stubborn fat',
       'Tighten skin',
@@ -1099,6 +1125,7 @@ export const servicesData: Service[] = [
     duration: '75 min',
     deposit: '$50',
     imageUrl: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Noticeably whiter teeth in one session',
       'Safe and effective',
@@ -1148,6 +1175,7 @@ export const servicesData: Service[] = [
     duration: '80 min',
     deposit: '$50',
     imageUrl: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Maximum whitening results',
       'Extended treatment time',
@@ -1194,6 +1222,7 @@ export const servicesData: Service[] = [
     duration: '420 min',
     deposit: '$500',
     imageUrl: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&utm_source=figma&utm_medium=referral',
+    bookingLink: undefined,
     benefits: [
       'Complete training in one day',
       'Full professional kit included',

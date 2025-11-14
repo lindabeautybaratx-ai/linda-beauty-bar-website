@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { getServices, getCategories, getAllCategories, getCategoryById, getCategoryIcon, getCategoryNameById } from '../utils/adminStorage';
+import { getServices, getCategories, getAllCategories, getCategoryById } from '../utils/adminStorage';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { navigate, useSearchParams } from '../components/Router';
 import { SEO } from '../components/SEO';
+import { getServiceBookingLink } from '../utils/bookingLinks';
 import type { Category } from '../data/types';
 import * as lucideReact from 'lucide-react';
 
@@ -174,7 +175,7 @@ export function ServicesPage() {
               size="lg" 
               className="bg-blush-pink hover:bg-blush-pink-dark text-charcoal"
             >
-              <a href="https://booking.lindasbeautybar.com" target="_blank" rel="noopener noreferrer">
+              <a href={getServiceBookingLink('default')} target="_blank" rel="noopener noreferrer">
                 Book Your Consultation
               </a>
             </Button>

@@ -59,6 +59,7 @@ function serviceToDbRow(service: any): any {
     deposit: service.deposit || null,
     category_id: categoryId,
     image_url: service.imageUrl || null,
+    booking_link: service.bookingLink || null,
     benefits: service.benefits || [],
     process: service.process || [],
     aftercare: service.aftercare || [],
