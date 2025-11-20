@@ -17,8 +17,8 @@ export function Hero() {
               Every Day
             </h1>
             <p className="text-xl text-charcoal/80">
-              Expert permanent makeup services including microblading, powder brows, eyeliner, and lip blush.
-              Enhance your natural beauty with our certified specialists.
+              Expert permanent makeup services including microblading, ombré powder brows, and lip blush.
+              Enhance your natural beauty with an arrange of services with our certified specialists.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-blush-pink hover:bg-blush-pink-dark text-charcoal">
